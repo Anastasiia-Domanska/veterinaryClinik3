@@ -69,7 +69,6 @@ public class OwnerRepository {
                 .stream()
                 .filter(x -> x.getId() == id)
                 .forEach(x -> {
-                    x.setName(newName);
                     x.setActive(active);
                     x.setPhone(phone);
                     x.setMail(mail);

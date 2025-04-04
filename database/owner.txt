@@ -1,0 +1,15 @@
+[ {
+  "id" : 1,
+  "name" : "Anton",
+  "mail" : "anton@mail",
+  "phone" : "5753060727",
+  "active" : true,
+  "pets" : [ ]
+}, {
+  "id" : 2,
+  "name" : "Oleg",
+  "mail" : "oleg1@oleg1",
+  "phone" : "0987654",
+  "active" : true,
+  "pets" : [ ]
+} ]

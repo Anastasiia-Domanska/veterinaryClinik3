@@ -22,7 +22,7 @@ public class OwnerController {
     //1. Сохранить владельца в базе данных
 
     public Owner save(String name, String mail, String phone) throws OwnerSaveException, IOException {
-        Owner owner = new Owner(name, mail, phone);
+        Owner owner = new Owner(name, phone, mail);
         return service.save(owner);
     }
 

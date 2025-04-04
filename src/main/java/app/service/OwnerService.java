@@ -85,11 +85,6 @@ public class OwnerService {
         if (owner == null){
             throw new OwnerUpdateException("Владелец не может быть null!");
         }
-        String name = owner.getName();
-
-        if (name == null || name.trim().isEmpty()) {
-            throw new OwnerUpdateException("Имя владельца не может быть null!");
-        }
 
         String mail = owner.getMail();
 

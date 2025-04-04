@@ -27,8 +27,8 @@ public class Owner {
 
     public Owner(String name, String phone, String mail) {
         this.name = name;
-        this.phone = phone;
         this.mail = mail;
+        this.phone = phone;
     }
 
     public Owner(int id, String mail, String phone) {

@@ -72,8 +72,8 @@ public class OwnerRepository {
                     x.setActive(active);
                     x.setPhone(phone);
                     x.setMail(mail);
-
                 });
+
         mapper.writeValue(database, owners);
     }
 

@@ -6,7 +6,7 @@ public class Vet {
 
     private int id;
     private String name;
-    private String role;
+    private String role;  // должность
     private boolean active;
 
     public Vet(int id, String name, String role, boolean active) {

@@ -57,23 +57,23 @@ public class VetRepository {
                 .orElse(null);
     }
 
-//    public void update(Vet vet) throws IOException {
-//        int id = vet.getId();
-//        String newName = vet.getName();
-//        boolean active = vet.isActive();
-//
-//
-//        List<Vet> vets = findAll();
-//        vets
-//                .stream()
-//                .filter(x -> x.getId() == id)
-//                .forEach(x -> {
-//                    x.setName(newName);
-//                    x.setActive(active);
-//
-//                });
-//        mapper.writeValue(database, owners);
-//    }
+    public void update(Vet vet) throws IOException {
+        int id = vet.getId();
+        String newName = vet.getName();
+        String role = vet.getRole();
+        boolean active = vet.isActive();
+
+        List<Vet> vets = findAll();
+        vets
+                .stream()
+                .filter(x -> x.getId() == id)
+                .forEach(x -> {
+                    x.setName(newName);
+                    x.setActive(active);
+                });
+
+        mapper.writeValue(database, vets);
+    }
 
     public void deleteById(int id) throws IOException {
         List<Vet> vets = findAll();
